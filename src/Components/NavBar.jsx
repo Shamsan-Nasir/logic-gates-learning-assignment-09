@@ -1,6 +1,6 @@
 import React from 'react'
 import logoMain from '../assets/icons8-compass-50 (1).png'
-
+import './Footer.css'
 export const NavBar = () => {
     return (
         <div className="navbar bg-compass-sand shadow-sm p-2.5  pr-5 ">
@@ -13,22 +13,22 @@ export const NavBar = () => {
                     <div className='text-2xl text-compass-forest font-bold'>Eco-Compass</div>
                     <ul className='flex gap-1.5 text-xs'>
                         <li className='hover:bg-compass-forest hover:text-white '>Explore</li>
-                        <li className='hover:bg-compass-forest hover:text-white'>Connect</li>
                         <li className='hover:bg-compass-forest hover:text-white'>Preserve</li>
+                        <li className='hover:bg-compass-forest hover:text-white'>Belong</li>
 
                     </ul>
                 </div>
             </div>
             <div className="flex gap-7">
 
-                <div className='flex gap-3.5 items-center'>
-                    <div className='text-lg text-compass-forest'>Home</div>
-                    <div className='text-lg text-compass-forest'>Profile</div>
-                    <div className='text-lg text-compass-forest'>Explore</div>
+                <div className='hidden sm:flex gap-3.5 items-center'>
+                    <div className='text-lg text-compass-forest p-2 linkDecor rounded-lg '>Home</div>
+                    <div className='text-lg text-compass-forest p-2 linkDecor rounded-lg'>Profile</div>
+                    <div className='text-lg text-compass-forest p-2 linkDecor rounded-lg'>Explore</div>
                 </div>
 
                 <div className="dropdown dropdown-end md:block">
-                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar disabled">
                         <div className="w-10 rounded-full">
                             <img
                                 alt="Tailwind CSS Navbar component"
