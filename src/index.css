@@ -1,2 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+*{
+    font-family: "Outfit", sans-serif;
+}
+@theme {
+  /* Core Brand Colors */
+  --color-compass-forest: #143625;  /* Primary headings, deep grounding elements */
+  --color-compass-teal: #22577a;    /* Ocean dives, rivers, primary brand accents */
+  --color-compass-sage: #80a1d4;    /* Light borders, atmospheric accents */
+  
+  /* Interface Neutral Tones */
+  --color-compass-mist: #e8f1f5;    /* Light card backgrounds, secondary containers */
+  --color-compass-sand: #fdfbf7;    /* Main page background (soft, warm off-white) */
+  --color-compass-stone: #2b3a32;   /* High-contrast body text for readability */
+}
