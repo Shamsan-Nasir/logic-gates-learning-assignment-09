@@ -1,25 +1,27 @@
 import React from 'react'
 
-export const AdventureCard = () => {
+
+
+export const AdventureCard = ({adventureData}) => {
     return (
-        <div className="card bg-base-100 w-96 shadow-sm">
-            <figure>
+        <div className="flex flex-col bg-compass-sand shadow-sm rounded-xl h-full border">
                 <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes" />
-            </figure>
-            <div className="card-body">
+                    src={adventureData.image}
+                    alt="adventure Image"
+                    className='max-h-45 object-cover rounded-t-xl' />
+            <div className="card-body   flex-1">
                 <h2 className="card-title">
-                    Card Title
-                    <div className="badge badge-secondary">NEW</div>
+                    {adventureData.adventureTitle}
+ 
                 </h2>
-                <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
+                <p className='flex-1'>{adventureData.shortDescription}</p>
                 <div className="card-actions justify-start">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
+                    {
+                        adventureData.ecoFriendlyFeatures.slice(0,2).map(element => <div className='bg-green-200 p-2 text-center rounded-full border text-xs'>{element}</div> )
+                    }
                 </div>
                 <div>
-                    <button className='btn w-full text-white bg-compass-forest'>
+                    <button className='btn w-full text-white bg-compass-forest rounded-xl'>
                         Explore Now
                     </button>
                 </div>
