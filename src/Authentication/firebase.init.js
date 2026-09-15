@@ -5,12 +5,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAdph2G3JjP_C5xCyU6B2jrjQrT2NgnExA",
-  authDomain: "ecocompass-197d6.firebaseapp.com",
-  projectId: "ecocompass-197d6",
-  storageBucket: "ecocompass-197d6.firebasestorage.app",
-  messagingSenderId: "327387028654",
-  appId: "1:327387028654:web:73a81931cdb289e224613f"
+  apiKey: VITE_FIREBASE_apiKey,
+  authDomain: VITE_FIREBASE_authDomain,
+  projectId: VITE_FIREBASE_projectId,
+  storageBucket: VITE_FIREBASE_storageBucket,
+  messagingSenderId:VITE_FIREBASE_messagingSenderId,
+  appId: VITE_FIREBASE_appId
 };
 
 // Initialize Firebase

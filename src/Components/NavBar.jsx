@@ -3,7 +3,7 @@ import logoMain from '../assets/icons8-compass-50 (1).png'
 import './Footer.css'
 export const NavBar = () => {
     return (
-        <div className="navbar bg-compass-sand shadow-sm p-2.5  pr-5 ">
+        <div className="navbar bg-compass-sand shadow-sm p-2 sm:p-3 pr-3 sm:pr-5 ">
 
             <div className="flex-1 flex justify-start items-center  ">
                 <a className="btn btn-ghost text-compass-forest">

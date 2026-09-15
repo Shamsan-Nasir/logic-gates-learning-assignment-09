@@ -3,7 +3,7 @@ import footerLogo from '../assets/logoFooter.png'
 
 export const Footer = () => {
     return (
-        <footer className="grid sm:grid-cols-3 grid-cols-1 gap-5 sm:gap-0 bg-compass-forest text-white py-5 px-2 sm:p-10 items-center ">
+        <footer className="grid sm:grid-cols-3 grid-cols-1 gap-5 sm:gap-0 bg-compass-forest text-white py-5 px-1 sm:p-10 items-center ">
             <aside className=' mx-auto sm:mx-0 flex flex-col items-center sm:items-start'>
                 <img src={footerLogo} alt="" />
                 <div className='text-center sm:text-start'>
@@ -18,26 +18,26 @@ export const Footer = () => {
             </aside>
             <div className='flex  justify-around col-span-1 sm:col-span-2'>
 
-                <nav className='flex flex-col'>
+                <nav className='flex flex-col space-y-1'>
                     <h6 className="footer-title"  >Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <a className="link link-hover text-sm sm:text-base">Branding</a>
+                    <a className="link link-hover text-sm sm:text-base">Design</a>
+                    <a className="link link-hover text-sm sm:text-base">Marketing</a>
+                    <a className="link link-hover text-sm sm:text-base">Advertisement</a>
                 </nav>
 
-                <nav className='flex flex-col'>
+                <nav className='flex flex-col space-y-1'>
                     <h6 className="footer-title">Company</h6>
-                    <a className="link link-hover">About us</a>
-                    <a className="link link-hover">Contact</a>
-                    <a className="link link-hover">Jobs</a>
-                    <a className="link link-hover">Press kit</a>
+                    <a className="link link-hover text-sm sm:text-base">About us</a>
+                    <a className="link link-hover text-sm sm:text-base">Contact</a>
+                    <a className="link link-hover text-sm sm:text-base">Jobs</a>
+                    <a className="link link-hover text-sm sm:text-base">Press kit</a>
                 </nav>
-                <nav className='flex flex-col'>
+                <nav className='flex flex-col space-y-1'>
                     <h6 className="footer-title">Legal</h6>
-                    <a className="link link-hover">Terms of use</a>
-                    <a className="link link-hover">Privacy policy</a>
-                    <a className="link link-hover">Cookie policy</a>
+                    <a className="link link-hover text-sm sm:text-base">Terms of use</a>
+                    <a className="link link-hover text-sm sm:text-base">Privacy policy</a>
+                    <a className="link link-hover text-sm sm:text-base">Cookie policy</a>
                 </nav>
             </div>
         </footer>
