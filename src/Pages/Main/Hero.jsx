@@ -24,7 +24,7 @@ export const Hero = () => {
     return (
         <div>
              
-            <div className=" scrollbar-none overflow-hidden relative w-full h-[150px] sm:h-[250px] md:h-[350px] lg:h-[450px]">
+            <div className=" scrollbar-none overflow-hidden relative w-full h-[200px] sm:h-[250px] md:h-[350px] lg:h-[450px]">
                 <div key={`current-${carouselIdx}`} className={`w-full bg-compass-sand absolute inset-0 animate__animated animate__fadeOutLeft`} >
                     <img src={images[carouselIdx]} alt="" className='w-full h-full object-cover    ' />
                 </div>

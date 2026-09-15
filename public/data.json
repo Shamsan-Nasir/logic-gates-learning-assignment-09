@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "adventureTitle": "Himalayan Mountain Trek",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b",
+    "categoryName": "Mountain Trekking",
+    "shortDescription": "Explore breathtaking Himalayan trails, alpine forests, and remote mountain villages on an unforgettable eco-friendly trek.",
+    "adventureCost": 18500,
+    "bookingAvailability": "Available",
+    "location": "Bandarban, Bangladesh",
+    "duration": "3 Days 2 Nights",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Experienced local guide",
+      "Camping equipment",
+      "Three meals per day",
+      "Drinking water",
+      "First aid kit"
+    ],
+    "ecoFriendlyFeatures": [
+      "Leave-no-trace trekking practices",
+      "Reusable water bottles provided",
+      "Local community guides",
+      "Plastic-free camping"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Wear comfortable hiking shoes",
+      "Carry a reusable water bottle",
+      "Avoid single-use plastic",
+      "Follow the guide's instructions at all times"
+    ]
+  },
+  {
+    "id": 2,
+    "adventureTitle": "Mangrove Kayaking Expedition",
+    "image": "https://images.unsplash.com/photo-1531058020387-3be344556be6",
+    "categoryName": "Water Adventure",
+    "shortDescription": "Paddle through peaceful mangrove waterways while discovering unique wildlife and fragile coastal ecosystems.",
+    "adventureCost": 8500,
+    "bookingAvailability": "Available",
+    "location": "Sundarbans, Bangladesh",
+    "duration": "2 Days 1 Night",
+    "adventureLevel": "Easy",
+    "includedItems": [
+      "Kayak and paddle",
+      "Safety equipment",
+      "Professional guide",
+      "Meals",
+      "Life jacket"
+    ],
+    "ecoFriendlyFeatures": [
+      "Human-powered kayaks",
+      "Wildlife-friendly routes",
+      "No-motor zones",
+      "Local conservation contribution"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear quick-drying clothing",
+      "Bring sunscreen and insect repellent",
+      "Do not feed wildlife",
+      "Keep noise levels low"
+    ]
+  },
+  {
+    "id": 3,
+    "adventureTitle": "Wildlife Safari",
+    "image": "https://images.unsplash.com/photo-1516426122078-c23e76319801",
+    "categoryName": "Wildlife Exploration",
+    "shortDescription": "Discover native wildlife in their natural habitat while learning about conservation and biodiversity.",
+    "adventureCost": 12000,
+    "bookingAvailability": "Available",
+    "location": "Sundarbans, Bangladesh",
+    "duration": "2 Days 1 Night",
+    "adventureLevel": "Easy",
+    "includedItems": [
+      "Wildlife guide",
+      "Boat transportation",
+      "Accommodation",
+      "Meals",
+      "Binoculars"
+    ],
+    "ecoFriendlyFeatures": [
+      "Low-impact wildlife observation",
+      "Solar-powered accommodation",
+      "Local conservation support",
+      "No wildlife feeding"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Do not approach animals",
+      "Avoid loud noises",
+      "Do not use flash photography",
+      "Follow all park regulations"
+    ]
+  },
+  {
+    "id": 4,
+    "adventureTitle": "Coral Reef Snorkeling",
+    "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
+    "categoryName": "Marine Adventure",
+    "shortDescription": "Swim above vibrant coral reefs and discover colorful marine life while learning about ocean conservation.",
+    "adventureCost": 6500,
+    "bookingAvailability": "Available",
+    "location": "Saint Martin's Island, Bangladesh",
+    "duration": "1 Day",
+    "adventureLevel": "Beginner",
+    "includedItems": [
+      "Snorkeling equipment",
+      "Life jacket",
+      "Professional instructor",
+      "Safety briefing",
+      "Drinking water"
+    ],
+    "ecoFriendlyFeatures": [
+      "Reef-safe sunscreen recommended",
+      "No-contact coral policy",
+      "Reusable equipment",
+      "Marine conservation education"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Do not touch coral",
+      "Do not collect shells or marine life",
+      "Use reef-safe sunscreen",
+      "Follow the instructor's safety instructions"
+    ]
+  },
+  {
+    "id": 5,
+    "adventureTitle": "Forest Camping Retreat",
+    "image": "https://images.unsplash.com/photo-1475483768296-6163e08872a1",
+    "categoryName": "Forest Adventure",
+    "shortDescription": "Spend a peaceful night surrounded by nature while hiking through forest trails and learning sustainable camping practices.",
+    "adventureCost": 5500,
+    "bookingAvailability": "Available",
+    "location": "Lawachara, Bangladesh",
+    "duration": "2 Days 1 Night",
+    "adventureLevel": "Easy",
+    "includedItems": [
+      "Tent",
+      "Sleeping bag",
+      "Dinner and breakfast",
+      "Forest guide",
+      "First aid kit"
+    ],
+    "ecoFriendlyFeatures": [
+      "Reusable camping equipment",
+      "Solar lighting",
+      "Leave-no-trace camping",
+      "Locally sourced food"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Do not litter",
+      "Stay on marked trails",
+      "Do not disturb wildlife",
+      "Keep food stored securely"
+    ]
+  },
+  {
+    "id": 6,
+    "adventureTitle": "River Cycling Adventure",
+    "image": "https://images.unsplash.com/photo-1541625602330-2277a4c46182",
+    "categoryName": "Cycling Adventure",
+    "shortDescription": "Cycle through scenic countryside roads, riverside villages, and green landscapes while supporting local communities.",
+    "adventureCost": 3500,
+    "bookingAvailability": "Available",
+    "location": "Sylhet, Bangladesh",
+    "duration": "1 Day",
+    "adventureLevel": "Moderate",
+    "includedItems": [
+      "Mountain bicycle",
+      "Helmet",
+      "Local cycling guide",
+      "Lunch",
+      "Repair kit"
+    ],
+    "ecoFriendlyFeatures": [
+      "Zero-emission transportation",
+      "Local food stops",
+      "Support for local businesses",
+      "Reusable water stations"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Wear comfortable clothing",
+      "Wear the provided helmet",
+      "Stay with the group",
+      "Carry personal identification"
+    ]
+  },
+  {
+    "id": 7,
+    "adventureTitle": "Waterfall Hiking Expedition",
+    "image": "https://images.unsplash.com/photo-1433086966358-54859d0ed716",
+    "categoryName": "Hiking",
+    "shortDescription": "Hike through lush green trails and discover hidden waterfalls while enjoying the natural beauty of Bangladesh's hills.",
+    "adventureCost": 4500,
+    "bookingAvailability": "Limited",
+    "location": "Moulvibazar, Bangladesh",
+    "duration": "1 Day",
+    "adventureLevel": "Challenging",
+    "includedItems": [
+      "Local hiking guide",
+      "First aid kit",
+      "Lunch",
+      "Trekking poles",
+      "Drinking water"
+    ],
+    "ecoFriendlyFeatures": [
+      "Leave-no-trace principles",
+      "Local community guides",
+      "Reusable supplies",
+      "Trail conservation contribution"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear proper hiking shoes",
+      "Be prepared for slippery trails",
+      "Do not swim without permission",
+      "Carry only essential belongings"
+    ]
+  },
+  {
+    "id": 8,
+    "adventureTitle": "Birdwatching & Wetland Tour",
+    "image": "https://images.unsplash.com/photo-1444464666168-49d633b86797",
+    "categoryName": "Birdwatching",
+    "shortDescription": "Explore peaceful wetlands and observe native and migratory birds with an experienced naturalist.",
+    "adventureCost": 4000,
+    "bookingAvailability": "Limited",
+    "location": "Tanguar Haor, Bangladesh",
+    "duration": "1 Day",
+    "adventureLevel": "Easy",
+    "includedItems": [
+      "Naturalist guide",
+      "Binoculars",
+      "Boat transportation",
+      "Breakfast",
+      "Bird identification guide"
+    ],
+    "ecoFriendlyFeatures": [
+      "Non-motorized observation areas",
+      "Wildlife-friendly tourism",
+      "Local community boat operators",
+      "Bird conservation education"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Avoid loud conversations",
+      "Do not disturb nesting birds",
+      "Do not feed wildlife",
+      "Bring a hat and sunscreen"
+    ]
+  }
+]
