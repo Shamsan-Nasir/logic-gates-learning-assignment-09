@@ -6,6 +6,7 @@ import { PrivateRoute } from '../Components/PrivateRoute';
 import { Register } from '../Pages/AccountInteractions/Register';
 import { UpdateProfile } from '../Pages/AccountInteractions/UpdateProfile';
 import { AdventureDetails } from '../Layouts/AdventureDetails';
+import { DetailsContainer } from '../Pages/adventureDetails/DetailsContainer';
 
 export const router = createBrowserRouter([
   {
@@ -31,7 +32,7 @@ export const router = createBrowserRouter([
     children: [{
 
     path: ':id',
-    element: <div>This ia an example of default Page</div>
+    Component: DetailsContainer
 
     }
   ]
