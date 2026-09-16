@@ -1,5 +1,8 @@
 import React from 'react'
 import footerLogo from '../assets/logoFooter.png'
+import { FaFacebook } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaXTwitter } from "react-icons/fa6";
 
 export const Footer = () => {
     return (
@@ -18,13 +21,7 @@ export const Footer = () => {
             </aside>
             <div className='flex  justify-around col-span-1 sm:col-span-2'>
 
-                <nav className='flex flex-col space-y-1'>
-                    <h6 className="footer-title"  >Services</h6>
-                    <a className="link link-hover text-sm sm:text-base">Branding</a>
-                    <a className="link link-hover text-sm sm:text-base">Design</a>
-                    <a className="link link-hover text-sm sm:text-base">Marketing</a>
-                    <a className="link link-hover text-sm sm:text-base">Advertisement</a>
-                </nav>
+
 
                 <nav className='flex flex-col space-y-1'>
                     <h6 className="footer-title">Company</h6>
@@ -38,6 +35,15 @@ export const Footer = () => {
                     <a className="link link-hover text-sm sm:text-base">Terms of use</a>
                     <a className="link link-hover text-sm sm:text-base">Privacy policy</a>
                     <a className="link link-hover text-sm sm:text-base">Cookie policy</a>
+                </nav>
+                <nav className='flex flex-col space-y-1'>
+                    <h6 className="footer-title mb-2"  >Our Socials</h6>
+                    <div className='flex gap-3'>
+                        <FaFacebook></FaFacebook>
+                        <RiInstagramFill></RiInstagramFill>
+                        <FaXTwitter></FaXTwitter>
+                    </div>
+
                 </nav>
             </div>
         </footer>

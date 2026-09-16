@@ -9,17 +9,17 @@ export const AdventureCard = ({adventureData}) => {
                     src={adventureData.image}
                     alt="adventure Image"
                     className='max-h-45 object-cover rounded-t-xl' />
-            <div className="card-body   flex-1">
+            <div className="card-body   flex-1 gap-4 p-5">
                 <h2 className="card-title">
                     {adventureData.adventureTitle}
  
                 </h2>
                 <p className='flex-1'>{adventureData.shortDescription}</p>
-                <div className="card-actions justify-start">
+                {/* <div className="card-actions justify-start">
                     {
-                        adventureData.ecoFriendlyFeatures.slice(0,2).map(element => <div className='bg-green-200 p-2 text-center rounded-full border text-xs'>{element}</div> )
+                        adventureData.ecoFriendlyFeatures.slice(0,2).map(element => <div className='bg-green-200 p-2 text-center rounded-full border border-compass-mist text-xs'>{element}</div> )
                     }
-                </div>
+                </div> */}
                 <div>
                     <button className='btn w-full text-white bg-compass-forest rounded-xl'>
                         Explore Now

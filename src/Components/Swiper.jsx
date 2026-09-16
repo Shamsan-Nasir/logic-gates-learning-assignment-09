@@ -17,9 +17,9 @@ const MySwiper = ({ data }) => {
         <Swiper
             modules={[Navigation]}
             slidesPerView={4}
-            spaceBetween={20}
-            slidesOffsetBefore={24}
-            slidesOffsetAfter={24}
+            spaceBetween={10}
+            slidesOffsetBefore={16}
+            slidesOffsetAfter={16}
             speed={500}
 
             roundLengths={true}

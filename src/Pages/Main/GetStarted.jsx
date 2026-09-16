@@ -40,7 +40,7 @@ const GetStartedAdventure = () => {
             </p>
 
             <button onClick={handleGetStarted}
-              className="bg-compass-sand text-compass-forest font-semibold px-7 py-3 rounded-full hover:bg-green-100 transition duration-300 shadow-md"
+              className="bg-compass-sand text-compass-forest font-semibold px-7 py-3 rounded-full hover:bg-green-100 transition duration-300 shadow-md cursor-pointer"
             >
               Start Your Adventure
             </button>
