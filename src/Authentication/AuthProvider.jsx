@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { auth } from './firebase.init'
 import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth'
+import { Navigate } from 'react-router'
 
 
 export const AuthContext = createContext(null)
@@ -9,6 +10,7 @@ export const AuthContext = createContext(null)
 
 export const AuthProvider = ({ children }) => {
     let [user, setUser] = useState()
+    let [loading,setLoading] = useState(true) 
 
     function signUp(email, password) {
 
@@ -32,8 +34,7 @@ export const AuthProvider = ({ children }) => {
 
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
-                // Signed in
-                // ...
+               return <Navigate to='/Login'></Navigate>
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -45,16 +46,22 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
+            setLoading(false)
          console.log(currentUser)   
         })
 
         return unsubscribe
     },[])
+    
+    useEffect(() => {
+        console.log('user is :',user)
+    },[user])
 
     let authInfo = {
         user,
+        loading,
         signUp,
-        signIn
+        signIn,
 
     }
     return (

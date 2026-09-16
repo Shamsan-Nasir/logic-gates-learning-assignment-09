@@ -4,10 +4,13 @@ import { Navigate, useNavigate } from 'react-router'
 
 export const PrivateRoute = ({children}) => {
     let navigate = useNavigate()
-    let {user} = useContext(AuthContext)
+    let {user,loading} = useContext(AuthContext)
 
 
     console.log(user)
+    if (loading) {
+        return <div>Loading...</div>
+    }
     if (user){
         return children
     }

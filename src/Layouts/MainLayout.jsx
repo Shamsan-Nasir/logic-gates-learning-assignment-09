@@ -5,6 +5,8 @@ import { Hero } from '../Pages/Main/Hero'
 import { AdventureContainer } from '../Pages/adventures/AdventureContainer'
 import { useLoaderData } from 'react-router'
 import { use } from 'react'
+import WhyChooseEcoCompass from '../Pages/Main/WhyChoose'
+import GetStartedAdventure from '../Pages/Main/GetStarted'
 
 export const MainLayout = () => {
 
@@ -17,6 +19,8 @@ export const MainLayout = () => {
             <NavBar></NavBar>
             <Hero></Hero>
             <AdventureContainer data={data}></AdventureContainer>
+            <WhyChooseEcoCompass></WhyChooseEcoCompass>
+            <GetStartedAdventure></GetStartedAdventure>
             <Footer></Footer>
         </div>
 

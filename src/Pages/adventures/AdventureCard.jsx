@@ -4,7 +4,7 @@ import React from 'react'
 
 export const AdventureCard = ({adventureData}) => {
     return (
-        <div className="flex flex-col bg-compass-sand shadow-sm rounded-xl h-full border">
+        <div className="flex flex-col bg-compass-sand rounded-xl h-full border-2 border-compass-mist shadow hover:shadow-lg transition duration-300">
                 <img
                     src={adventureData.image}
                     alt="adventure Image"
