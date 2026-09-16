@@ -5,6 +5,7 @@ import { Login } from '../Pages/AccountInteractions/Login';
 import { PrivateRoute } from '../Components/PrivateRoute';
 import { Register } from '../Pages/AccountInteractions/Register';
 import { UpdateProfile } from '../Pages/AccountInteractions/UpdateProfile';
+import { AdventureDetails } from '../Layouts/AdventureDetails';
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,17 @@ export const router = createBrowserRouter([
   {
     path: '/update',
     Component: UpdateProfile
+  },
+  {
+    path: '/adventureDetails',
+    Component: AdventureDetails,
+    children: [{
+
+    path: ':id',
+    element: <div>This ia an example of default Page</div>
+
+    }
+  ]
   },
   {
     path: '/test',

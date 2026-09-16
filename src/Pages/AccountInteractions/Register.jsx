@@ -73,7 +73,7 @@ export const Register = () => {
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-xl py-8 border border-compass-forest">
 
                     <div className="text-center ">
-                        <h1 className="text-5xl font-bold text-compass-forest">SignUp now</h1>
+                        <h1 className="text-5xl font-bold text-compass-forest">Sign-Up Now</h1>
 
                     </div>
                     <div className="card-body">

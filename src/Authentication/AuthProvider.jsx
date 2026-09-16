@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
-import { auth } from './firebase.init'
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth'
+import { auth, googleProvider } from './firebase.init'
+import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import { Navigate, useNavigate } from 'react-router'
 
 
@@ -22,6 +22,27 @@ export const AuthProvider = ({ children }) => {
         return signInWithEmailAndPassword(auth, email, password)
 
     }
+    function signInWithGoogle() {
+        signInWithPopup(auth, googleProvider)
+            .then((result) => {
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                const credential = GoogleAuthProvider.credentialFromResult(result);
+                const token = credential.accessToken;
+                // The signed-in user info.
+                setUser(result.user)
+                
+                // IdP data available using getAdditionalUserInfo(result)
+                // ...
+            }).catch((error) => {
+                // Handle Errors here.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                const email = error.customData.email;
+                const credential = GoogleAuthProvider.credentialFromError(error);
+                // ...
+            });
+
+    }
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
             setUser(currentUser)
@@ -39,6 +60,7 @@ export const AuthProvider = ({ children }) => {
         loading,
         signUp,
         signIn,
+        signInWithGoogle
 
     }
     return (
