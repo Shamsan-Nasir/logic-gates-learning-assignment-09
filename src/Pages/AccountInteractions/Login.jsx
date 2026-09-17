@@ -7,11 +7,11 @@ import { GoogleAuthProvider } from 'firebase/auth';
 export const Login = () => {
 
 
-    const {  signIn, signInWithGoogle } = useContext(AuthContext)
+    const { user, signIn, signInWithGoogle } = useContext(AuthContext)
 
     const navigate = useNavigate()
     let location = useLocation()
-    
+
     const handleLogin = (event) => {
         event.preventDefault()
 
@@ -52,7 +52,7 @@ export const Login = () => {
                 {/* <div className='w-full flex justify-start'><button onClick={() => navigate('/')} className='btn border bg-white border-compass-forest text-compass-forest hover:bg-compass-forest hover:text-white text-center w-full'><FaAngleLeft></FaAngleLeft> Back to Home</button></div> */}
                 <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg border border-compass-forest pt-8 pb-4">
                     <div className="text-center ">
-                        <h1 className="text-5xl font-bold text-compass-forest">Welcome Back</h1>
+                        <h1 className="text-5xl font-bold text-compass-forest">Welcome</h1>
                         <p className='text-compass-forest'>Log-In to Continue</p>
 
                     </div>

@@ -2,13 +2,28 @@ import React, { useContext } from 'react'
 import logoMain from '../assets/icons8-compass-50 (1).png'
 import './Footer.css'
 import { AuthContext } from '../Authentication/AuthProvider'
-import { useNavigate } from 'react-router'
+import { useLocation, useNavigate } from 'react-router'
 import { MdAccountCircle } from "react-icons/md";
 
 export const NavBar = () => {
 
+
+    let location = useLocation()
+
     let { user, SignOut } = useContext(AuthContext)
     const navigate = useNavigate()
+
+    function handleProfileIcon() {
+        if (user) {
+            navigate('/',{state:'/'})
+            SignOut()
+           
+
+        }
+        else {
+            navigate('/login')
+        }
+    }
     return (
         <div className="navbar bg-compass-sand shadow-sm p-2 sm:p-3 pr-3 sm:pr-5 ">
 
@@ -29,13 +44,13 @@ export const NavBar = () => {
             <div className="flex gap-7">
 
                 <div className='hidden sm:flex gap-3.5 items-center'>
-                    <div onClick={() => navigate('/')} className='text-lg text-compass-forest p-2 linkDecor rounded-lg '>Home</div>
-                    <div onClick={() => navigate('/explore')} className='text-lg text-compass-forest p-2 linkDecor rounded-lg'>Explore</div>
+                    <div onClick={() => navigate('/')} className={`text-lg text-compass-forest p-2 linkDecor   ${location.pathname === '/' && 'underline'}`}>Home</div>
+                    <div onClick={() => navigate('/explore')} className={`text-lg text-compass-forest p-2 linkDecor  ${location.pathname === '/explore' && 'underline'}`}>Explore</div>
 
                     {
-                        user && <div onClick={() => navigate('/')} className='text-lg text-compass-forest p-2 linkDecor rounded-lg'>Profile</div>
+                        user && <div onClick={() => navigate('/profile')} className={`text-lg text-compass-forest p-2 linkDecor ${location.pathname === '/profile' && 'underline'}`}>Profile</div>
                     }
-                    
+
                 </div>
 
                 <div className="dropdown dropdown-end md:block">
@@ -51,15 +66,17 @@ export const NavBar = () => {
                         </div>
                     </div>
                     {
-                        user && <ul
+                        <ul
                             tabIndex={-1}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li>
-                                <a className="justify-between">
-                                    Profile
-                                </a>
-                            </li>
-                            <li onClick={SignOut}><a>Logout</a></li>
+                            className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 z-50 shadow">
+                            {
+                                user && <li>
+                                    <a className="justify-between">
+                                        Profile
+                                    </a>
+                                </li>
+                            }
+                            <li onClick={handleProfileIcon}><a>{user ? 'Log Out' : 'SignIn'}</a></li>
                         </ul>
                     }
                 </div>

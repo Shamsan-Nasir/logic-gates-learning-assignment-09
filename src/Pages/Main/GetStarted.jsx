@@ -10,7 +10,7 @@ const GetStartedAdventure = () => {
     if (!user){
         navigate('/login')
     } else{
-        navigate('/')
+        navigate('/explore')
     }
 
   }  

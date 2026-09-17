@@ -12,7 +12,7 @@ export const DetailsImage = ( {pageData}) => {
                 </div>
 
                 <div className='absolute top-0 z-20 p-4 px-12 w-full bg-linear-to-b from-black/85 hover:via-black/65 to-transparent transition duration-400'>
-                    <span onClick={() => navigate(-1)} className='cursor-pointer w-25 bg-white   text-white text-4xl z-30'> 
+                    <span onClick={() => navigate('/explore')} className='cursor-pointer w-25 bg-white   text-white text-4xl z-30'> 
                         <BiArrowBack></BiArrowBack>
                     </span>
                 </div>

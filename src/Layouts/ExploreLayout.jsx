@@ -6,6 +6,7 @@ import { ExploreContainer } from '../Pages/Explore Adventures/ExploreContainer'
 
 export const ExploreLayout = () => {
     let allData = useLoaderData()
+    window.scrollTo(0,0)
     return (
         <div className='max-w-360 mx-auto'>
             <NavBar></NavBar>
