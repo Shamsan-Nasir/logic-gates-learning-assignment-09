@@ -38,7 +38,7 @@ export const Footer = () => {
                 </nav>
                 <nav className='flex flex-col space-y-1'>
                     <h6 className="footer-title mb-2"  >Our Socials</h6>
-                    <div className='flex gap-3'>
+                    <div className='flex gap-3 text-xl'>
                         <FaFacebook></FaFacebook>
                         <RiInstagramFill></RiInstagramFill>
                         <FaXTwitter></FaXTwitter>

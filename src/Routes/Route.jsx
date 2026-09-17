@@ -31,16 +31,17 @@ export const router = createBrowserRouter([
     Component: AdventureDetails,
     children: [{
 
-    path: ':id',
-    Component: DetailsContainer
+      path: ':id',
+      Component: DetailsContainer,
+      loader: () => fetch('/data.json').then(res => res.json())
 
     }
-  ]
+    ]
   },
   {
     path: '/test',
     element: <PrivateRoute>
       <div>working</div>
-    </PrivateRoute> 
+    </PrivateRoute>
   }
 ]);
