@@ -7,6 +7,7 @@ import { Register } from '../Pages/AccountInteractions/Register';
 import { UpdateProfile } from '../Pages/AccountInteractions/UpdateProfile';
 import { AdventureDetails } from '../Layouts/AdventureDetails';
 import { DetailsContainer } from '../Pages/adventureDetails/DetailsContainer';
+import { ExploreLayout } from '../Layouts/ExploreLayout';
 
 export const router = createBrowserRouter([
   {
@@ -28,7 +29,9 @@ export const router = createBrowserRouter([
   },
   {
     path: '/adventureDetails',
-    Component: AdventureDetails,
+    element: <PrivateRoute>
+      <AdventureDetails></AdventureDetails>
+    </PrivateRoute>,
     children: [{
 
       path: ':id',
@@ -39,9 +42,11 @@ export const router = createBrowserRouter([
     ]
   },
   {
-    path: '/test',
+    path:'/explore',
     element: <PrivateRoute>
-      <div>working</div>
-    </PrivateRoute>
+      <ExploreLayout></ExploreLayout>
+    </PrivateRoute>,
+    loader: () => fetch('/data.json').then(res => res.json())
   }
+ 
 ]);

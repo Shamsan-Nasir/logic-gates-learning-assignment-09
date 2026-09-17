@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import { AuthContext } from '../Authentication/AuthProvider'
-import { Navigate, useNavigate } from 'react-router'
+import { Navigate, useLocation, useNavigate } from 'react-router'
 
 export const PrivateRoute = ({children}) => {
     let navigate = useNavigate()
     let {user,loading} = useContext(AuthContext)
+    let location = useLocation()
 
 
     console.log(user)
@@ -16,6 +17,6 @@ export const PrivateRoute = ({children}) => {
     }
     else{
 
-       return <Navigate to='/login'></Navigate>
+       return <Navigate to='/login' state={location.pathname}></Navigate>
     }
 }

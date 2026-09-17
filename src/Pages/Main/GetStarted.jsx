@@ -7,10 +7,10 @@ const GetStartedAdventure = () => {
     let {user} = useContext(AuthContext);
     let navigate = useNavigate()
   function handleGetStarted(){
-    if (user){
+    if (!user){
         navigate('/login')
     } else{
-        navigate('/test')
+        navigate('/')
     }
 
   }  
