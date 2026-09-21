@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import { auth, googleProvider } from './firebase.init'
-import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth'
+import { createUserWithEmailAndPassword, deleteUser, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from 'firebase/auth'
 import { Navigate, useNavigate } from 'react-router'
 
 
@@ -22,15 +22,21 @@ export const AuthProvider = ({ children }) => {
         return signInWithEmailAndPassword(auth, email, password)
 
     }
-    function SignOut(){
-      return  signOut(auth)
+    function SignOut() {
+        return signOut(auth)
     }
     function signInWithGoogle() {
+        return signInWithPopup(auth, googleProvider)
+    }
+    function UpdateProfile(name, photo) {
+        return updateProfile(auth.currentUser, {
+            displayName: name, photoURL: photo
 
+        })
+    }
 
-       return signInWithPopup(auth, googleProvider)
-           
-
+    function DeleteAccount() {
+       return deleteUser(auth.currentUser)
     }
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -50,7 +56,9 @@ export const AuthProvider = ({ children }) => {
         signUp,
         signIn,
         signInWithGoogle,
-        SignOut
+        SignOut,
+        UpdateProfile,
+        DeleteAccount
 
     }
     return (
