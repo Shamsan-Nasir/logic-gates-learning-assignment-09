@@ -53,7 +53,7 @@ const MySwiper = ({ data }) => {
         >
             {
                 allData.map(elements =>
-                    <SwiperSlide key={elements.id} className="h-1/2">
+                    <SwiperSlide key={elements.id} className="h-auto!">
                         <AdventureCard adventureData={elements}></AdventureCard>
                     </SwiperSlide>
                 )

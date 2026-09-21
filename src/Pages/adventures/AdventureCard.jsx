@@ -12,12 +12,12 @@ export const AdventureCard = ({ adventureData }) => {
                 src={adventureData.image}
                 alt="adventure Image"
                 className='max-h-45 object-cover rounded-t-xl' />
-            <div className="card-body   flex-1 gap-4 p-5">
-                <h2 className="card-title">
+            <div className="card-body flex-1 gap-4 p-5">
+                <h2 className="card-title items-start">
                     {adventureData.adventureTitle}
 
                 </h2>
-                <p className='flex-1'>{adventureData.shortDescription.slice(0,100)}...Read More</p>
+                <p className='flex-1'>{adventureData.shortDescription}</p>
                 <div className="card-actions justify-start">
                     <div className='bg-green-200 p-2 text-center rounded-full w-full  border border-compass-forest text-xs'>{adventureData.categoryName}</div> 
 

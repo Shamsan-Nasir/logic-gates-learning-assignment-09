@@ -49,8 +49,8 @@ export const Login = () => {
     return (
         <div className="hero bg-compass-sand min-h-screen flex justify-center max-w-360 mx-auto  ">
             <div className="hero-content flex-col gap-0">
-                {/* <div className='w-full flex justify-start'><button onClick={() => navigate('/')} className='btn border bg-white border-compass-forest text-compass-forest hover:bg-compass-forest hover:text-white text-center w-full'><FaAngleLeft></FaAngleLeft> Back to Home</button></div> */}
-                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg border border-compass-forest pt-8 pb-4">
+                <div className='w-full flex justify-start'><button onClick={() => navigate('/')} className='btn border bg-white border-compass-forest text-compass-forest hover:bg-compass-forest hover:text-white text-center w-full rounded-b-none'><FaAngleLeft></FaAngleLeft> Back to Home</button></div>
+                <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-lg border border-compass-forest pt-8 pb-4 rounded-t-none">
                     <div className="text-center ">
                         <h1 className="text-5xl font-bold text-compass-forest">Welcome</h1>
                         <p className='text-compass-forest'>Log-In to Continue</p>

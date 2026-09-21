@@ -32,10 +32,10 @@ const AdventureSummary = ({ adventure }) => {
             </div>
 
             {/* Content */}
-            <div className="p-5 flex-1">
+            <div className="p-5 flex flex-col flex-1">
 
                 {/* Description */}
-                <p className="mb-5 text-sm leading-6 text-compass-stone/80">
+                <p className="mb-5 text-sm leading-6 text-compass-stone/80 flex-1">
                     {adventure.shortDescription}
                 </p>
 
@@ -97,7 +97,7 @@ const AdventureSummary = ({ adventure }) => {
                 </div>
 
                 {/* Bottom Information */}
-                <div className="mt-5 flex items-center justify-between border-t border-compass-sage/30 pt-4">
+                <div className="mt-5 flex items-end-safe justify-between border-t border-compass-sage/30 pt-4">
 
                     <div>
                         <span className="text-xs text-compass-stone/60">

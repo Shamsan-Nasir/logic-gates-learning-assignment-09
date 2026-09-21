@@ -57,9 +57,9 @@ export const NavBar = () => {
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar disabled">
                         <div className="w-10 rounded-full">
                             {
-                                user ? <img
+                                user?.photoURL ? <img
                                     alt="Tailwind CSS Navbar component"
-                                    src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                                    src={user.photoURL} />
                                     : <div className='w-full rounded-full text-5xl flex justify-center items-center'><MdAccountCircle></MdAccountCircle> </div>
                             }
 
